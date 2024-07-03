@@ -1,6 +1,7 @@
 import "~/styles/globals.css";
 
 import { GeistSans } from "geist/font/sans";
+import NavBar from "~/components/navbar";
 
 export const metadata = {
   title: "Create T3 App",
@@ -15,7 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
-      <body>{children}</body>
+      <body className="bg-customBg">
+        <NavBar />
+        {children}
+      </body>
     </html>
   );
 }
