@@ -10,6 +10,7 @@ export default {
       },
       colors: {
         customBg: "#f0d4fc",
+        customText: "#9747ff",
       },
     },
   },
